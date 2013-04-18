@@ -1,4 +1,5 @@
-npm-builder-template
+{{name}}
 ====================
 
-my npm-builder template
+{{description}}
+
