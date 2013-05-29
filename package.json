@@ -10,10 +10,10 @@
         "email" : "david@volminator.com",
         "web"   : "http://daxxog.com/"
     }],
-    "repositories": [{
+    "repository": {
         "type" : "git",
         "url"  : "https://github.com/{{user}}/{{name}}.git"
-    }],
+    },
     "dependencies": {
     },
     "bin": {
