@@ -1,4 +1,4 @@
-/* {{name}}
+/* {{Name}}
  * {{description}}
  * (c) 2013 David (daXXog) Volm ><> + + + <><
  * Released under Apache License, Version 2.0:
@@ -20,7 +20,7 @@
         root.returnExports = factory();
   }
 }(this, function() {
-    var {{name}};
+    var {{Name}};
     
-    return {{name}};
+    return {{Name}};
 }));
