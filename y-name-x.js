@@ -17,7 +17,7 @@
         define(factory);
     } else {
         // Browser globals (root is window)
-        root.returnExports = factory();
+        root.{{Name}} = factory();
   }
 }(this, function() {
     var {{Name}};
