@@ -15,6 +15,9 @@
         "url"  : "https://github.com/{{user}}/{{name}}.git"
     },
     "dependencies": {
+        "bitfactory": "*",
+        "stoptime": "*",
+        "uglify-js": "*"
     },
     "bin": {
         "{{name}}" : "./bin/{{name}}"
