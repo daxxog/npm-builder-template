@@ -15,7 +15,7 @@ var watch = stoptime(),
 
 bitfactory.make({ //routes
     "": function(err, results) {
-        console.log('built {{Name}} in ' + watch + 'ms.');
+        console.log('built {{Name}} in ' + watch.elapsed() + 'ms.');
     }
 }, { //dependencies
     "*": { //wildcard
