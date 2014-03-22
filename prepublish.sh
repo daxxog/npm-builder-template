@@ -6,7 +6,11 @@
 # http://www.apache.org/licenses/LICENSE-2.0.html  
 #################################################
 
-node make
-rm npm-debug.log >> /dev/null
-mv {{name}}.js ../.tmp.js
-mv {{name}}.h ../.tmp.h
+if [ ! -f com-npm-install ]; then
+	node make
+	rm npm-debug.log >> /dev/null
+	mv {{name}}.js ../.tmp.js
+	mv {{name}}.h ../.tmp.h
+else
+	rm com-npm-install
+fi

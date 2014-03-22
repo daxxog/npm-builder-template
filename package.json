@@ -20,6 +20,7 @@
         "uglify-js": "*"
     },
     "scripts": {
+        "preinstall": "./preinstall.sh",
         "prepublish": "./prepublish.sh",
         "postpublish": "./postpublish.sh"
     },
