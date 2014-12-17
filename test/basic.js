@@ -10,12 +10,10 @@ var vows = require('vows'),
     {{Name}} = require('../{{name}}.min.js');
 
 vows.describe('basic').addBatch({
-    'when creating a new {{Name}}': {
-        topic: function() {
-            return new {{Name}}();
-        },
-        'we get no errors thrown': function(topic) {
-            assert.doesNotThrow(topic);
+    '{{Name}}': {
+        topic: {{Name}},
+        'is undefined': function(topic) {
+            assert.equal(topic, undefined);
         },
     }
 }).export(module);
