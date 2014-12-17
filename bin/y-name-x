@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('../{{name}}.min.js');
+require('../cli.min.js');

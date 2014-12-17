@@ -4,7 +4,9 @@
     "homepage"    : "https://github.com/{{user}}/{{name}}",
     "main"        : "{{name}}.min.js",
     "version"     : "0.0.1",
-    "engines": { "node" : ">=0.7.0" },
+    "engines": {
+        "node" : ">=0.10.33"
+    },
     "maintainers": [{
         "name"  : "David Volm",
         "email" : "david@volminator.com",
@@ -17,13 +19,19 @@
     "devDependencies": {
         "bitfactory": "*",
         "stoptime": "*",
-        "uglify-js": "*"
+        "uglify-js": "*",
+        "vows": "*"
     },
     "scripts": {
-        "preinstall": "./preinstall.sh",
-        "prepublish": "./prepublish.sh",
-        "postpublish": "./postpublish.sh"
+        "build": "node make.js",
+        "test": "vows test/*",
+        "start": "node cli.js",
+        "prepublish": "npm build",
     },
+    "files": [
+        "cli.min.js",
+        "{{name}}.min.js"
+    ],
     "bin": {
         "{{name}}" : "./bin/{{name}}"
     }

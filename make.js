@@ -28,6 +28,10 @@ bitfactory.make({ //routes
         "{{name}}.min.js": ["header", function(cb) {
             fs.writeFileSync('{{name}}.min.js', header + UglifyJS.minify('{{name}}.js').code);
             cb();
+        }],
+        "cli.min.js": ["header", function(cb) {
+            fs.writeFileSync('cli.min.js', header + UglifyJS.minify('cli.js').code);
+            cb();
         }]
     }
 });
