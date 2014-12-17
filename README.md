@@ -1,5 +1,6 @@
 {{Name}}
 ====================
+|travis|
 
 {{description}}
 
