@@ -1,8 +1,9 @@
 {{Name}}
 ====================
-|travis|
 
-{{description}}
+  {{description}}
+
+  [![Build Status][travis-image]][travis-url]
 
 Install
 -------
@@ -14,5 +15,6 @@ edge
 ```bash
 npm install -g https://github.com/daxxog/{{name}}/tarball/master
 ```
-.. |travis| image:: https://secure.travis-ci.org/daxxog/{{name}}.png?branch=master
-    :target: https://travis-ci.org/daxxog/{{name}}
+
+[travis-image]: https://img.shields.io/travis/daxxog/{{name}}.png?branch=master
+[travis-url]: https://travis-ci.org/daxxog/{{name}}
