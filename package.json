@@ -26,7 +26,7 @@
         "build": "node make.js",
         "test": "vows test/*",
         "start": "node cli.js",
-        "prepublish": "npm build",
+        "prepublish": "npm build"
     },
     "files": [
         "cli.min.js",
