@@ -31,9 +31,9 @@
     "files": [
         "cli.min.js",
         "{{name}}.min.js",
-        "./bin/{{name}}"
+        "bin/{{name}}"
     ],
     "bin": {
-        "{{name}}" : "./bin/{{name}}"
+        "{{name}}" : "bin/{{name}}"
     }
 }
