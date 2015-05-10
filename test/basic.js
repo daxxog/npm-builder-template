@@ -11,9 +11,11 @@ var vows = require('vows'),
 
 vows.describe('basic').addBatch({
     '{{Name}}': {
-        topic: {{Name}},
-        'is undefined': function(topic) {
-            assert.equal(topic, undefined);
+        topic: function() {
+        	return typeof {{Name}};
         },
+        'is a function': function(topic) {
+            assert.equal(topic, 'function');
+        }
     }
 }).export(module);
