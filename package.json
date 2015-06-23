@@ -1,6 +1,7 @@
 {
     "name"        : "{{name}}",
     "description" : "{{description}}",
+    "license"     : "Apache-2.0",
     "homepage"    : "https://github.com/{{user}}/{{name}}",
     "main"        : "{{name}}.min.js",
     "version"     : "0.0.1",
