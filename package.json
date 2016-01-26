@@ -24,7 +24,7 @@
         "vows": "*"
     },
     "scripts": {
-        "build": "node make.js",
+        "build": "node make.js; cat .gitignore | grep -v {{name}}.min.js > .npmignore",
         "test": "vows test/*",
         "start": "node cli.js",
         "prepublish": "npm run build"
